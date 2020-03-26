@@ -34,7 +34,7 @@ function Movie(props, { addToSavedList }) {
       .delete(`http://localhost:5000/api/movies/${match.params.id}`)
       .then(res => {
         props.getMovieList();
-        
+        // props.history.push('/');
       })
       .catch(err => {
         console.log(err);
